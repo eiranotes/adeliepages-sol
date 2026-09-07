@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adelie Pages — 아델리드로우의 디지털 문구 앱</title>
+  <meta name="description" content="아델리드로우의 스티커팩과 종이를 고르고, 사진과 글을 더해 한 장의 페이지를 만드는 iOS · Android 앱 Adelie Pages.">
+  <meta name="theme-color" content="#f6f7f5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adelie Pages">
+  <meta property="og:description" content="스티커팩을 고르고, 한 장을 만들고, 저장해 다시 여는 아델리드로우의 디지털 문구 앱.">
+  <meta property="og:image" content="./assets/img/screens/home.png">
+  <link rel="icon" type="image/png" href="./assets/img/brand/app-icon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="topbar" data-header>
+    <a class="brand" href="#top" aria-label="Adelie Pages 처음으로">
+      <img src="./assets/img/brand/app-icon.png" width="32" height="32" alt="">
+      <span>Adelie Pages</span>
+    </a>
+    <nav class="topnav" aria-label="페이지 섹션">
+      <a href="#journey">사용 흐름</a>
+      <a href="#screens">전체 화면</a>
+      <a href="#packs">스티커팩</a>
+      <a href="#editor">편집기</a>
+      <a href="#status">현재 상태</a>
+    </nav>
+    <span class="release-pill">출시 준비 중</span>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-orbit" aria-hidden="true">
+        <figure class="orbit-card orbit-a"><img src="./assets/img/packs/lemon-pound-cake.webp" alt=""></figure>
+        <figure class="orbit-card orbit-b"><img src="./assets/img/packs/spring-fox.webp" alt=""></figure>
+        <figure class="orbit-card orbit-c"><img src="./assets/img/packs/home-sweet-home.webp" alt=""></figure>
+      </div>
+
+      <div class="hero-copy" data-reveal>
+        <p class="kicker">ADELIE DRAW / DIGITAL STATIONERY</p>
+        <h1>
+          <span>아델리 문구를</span>
+          <span>한 장에 씁니다.</span>
+        </h1>
+        <p class="hero-lede">스티커팩을 고르고, 종이를 깔고, 사진과 글을 얹어 페이지를 만듭니다. 저장한 페이지는 다시 열어 이어서 편집하거나 이미지로 내보낼 수 있습니다.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#screens">실제 화면 보기 <span aria-hidden="true">↘</span></a>
+          <span class="meta-line">iOS · Android / phone · tablet</span>
+        </div>
+      </div>
+
+      <div class="hero-device" data-reveal>
+        <div class="device-shell">
+          <img src="./assets/img/screens/home.png" width="390" height="844" alt="Adelie Pages 홈 화면">
+        </div>
+        <p class="device-caption"><span>HOME</span> 개발 중인 실제 앱 화면</p>
+      </div>
+
+      <div class="hero-foot" aria-hidden="true">
+        <span>PACK / PAGE / KEEP</span>
+        <span class="hero-rule"></span>
+      </div>
+    </section>
+
+    <section class="thesis" aria-label="제품 흐름">
+      <div class="thesis-line" data-reveal>
+        <span>PACK</span><i>→</i><span>PAGE</span><i>→</i><span>KEEP</span>
+      </div>
+      <p data-reveal>팩을 보고 끝나는 카탈로그가 아니라, 바로 한 장을 만들어 쓰는 앱입니다.</p>
+    </section>
+
+    <section class="journey" id="journey">
+      <div class="section-head" data-reveal>
+        <p class="kicker">HOW IT WORKS</p>
+        <h2>고르고, 만들고, 다시 엽니다.</h2>
+        <p>Home과 Studio에서 팩을 찾고, Compose에서 한 장을 만든 뒤, Pages에서 다시 꺼내 봅니다.</p>
+      </div>
+
+      <div class="story-layout">
+        <div class="story-steps">
+          <article class="story-step is-active" data-screen="studio" data-step>
+            <span class="step-index">01 / 고르기</span>
+            <h3>스티커팩과 종이를 먼저 고릅니다.</h3>
+            <p>Home과 Studio에서 현재 팩을 보고, 팩 상세에서 구성과 샘플을 확인한 뒤 만들기로 넘어갑니다.</p>
+            <ul>
+              <li>Home · Studio</li>
+              <li>팩 상세</li>
+              <li>샘플 확인</li>
+            </ul>
+          </article>
+
+          <article class="story-step" data-screen="compose" data-step>
+            <span class="step-index">02 / 만들기</span>
+            <h3>사진, 종이, 스티커, 글을 한 장에 놓습니다.</h3>
+            <p>빈 페이지나 사진에서 시작합니다. 요소를 선택해 이동하고, 복제하고, 순서를 바꾸며 작업 내용은 기기에 자동 저장됩니다.</p>
+            <ul>
+              <li>사진 · 종이 · 스티커 · 텍스트</li>
+              <li>undo · redo</li>
+              <li>자동 저장</li>
+            </ul>
+          </article>
+
+          <article class="story-step" data-screen="pages" data-step>
+            <span class="step-index">03 / 다시 열기</span>
+            <h3>만든 페이지를 날짜와 검색으로 다시 찾습니다.</h3>
+            <p>저장한 페이지를 열어 다시 편집하고, 필요한 결과물은 PNG로 저장하거나 시스템 공유 기능으로 보냅니다.</p>
+            <ul>
+              <li>날짜 탐색 · 검색</li>
+              <li>재편집</li>
+              <li>이미지 저장 · 공유</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="story-stage" aria-live="polite">
+          <div class="story-device">
+            <img class="story-screen is-visible" data-story-image="studio" src="./assets/img/screens/studio.png" alt="Studio 화면">
+            <img class="story-screen" data-story-image="compose" src="./assets/img/screens/compose.png" alt="편집 화면">
+            <img class="story-screen" data-story-image="pages" src="./assets/img/screens/pages.png" alt="Pages 화면">
+          </div>
+          <div class="stage-label">
+            <span data-stage-title>STUDIO</span>
+            <span data-stage-count>01 / 03</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen-atlas" id="screens">
+      <div class="section-head inverse" data-reveal>
+        <p class="kicker">SCREEN MAP</p>
+        <h2>현재 화면을 전부 펼쳐 봅니다.</h2>
+        <p>아래 이미지는 현재 개발 빌드의 실제 화면입니다. 홈의 다른 상태와 팩 상세, 달력처럼 주 화면에서 이어지는 화면도 함께 넣었습니다.</p>
+      </div>
+
+      <div class="atlas-grid">
+        <article class="atlas-card atlas-card-wide" data-reveal>
+          <div class="atlas-copy">
+            <span>HOME</span>
+            <h3>오늘의 페이지, 추천 팩, 최근 작업.</h3>
+            <p>앱을 열면 오늘 만들기와 현재 팩을 먼저 보여줍니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/home.png" alt="Adelie Pages Home 화면"></div>
+        </article>
+
+        <article class="atlas-card" data-reveal>
+          <div class="atlas-copy">
+            <span>HOME / PACK HIGHLIGHT</span>
+            <h3>홈에서 팩을 바꿔 보는 상태.</h3>
+            <p>팩 배너와 추천 내용이 바뀐 홈 화면입니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/home-lemon.png" alt="레몬 팩이 표시된 Home 화면"></div>
+        </article>
+
+        <article class="atlas-card" data-reveal>
+          <div class="atlas-copy">
+            <span>STUDIO</span>
+            <h3>스티커팩을 둘러봅니다.</h3>
+            <p>현재 카탈로그의 팩을 모아 보고 상세로 들어갑니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/studio.png" alt="Studio 화면"></div>
+        </article>
+
+        <article class="atlas-card atlas-card-wide atlas-card-dark" data-reveal>
+          <div class="atlas-copy">
+            <span>PACK DETAIL</span>
+            <h3>팩 구성과 샘플을 확인하고 바로 사용합니다.</h3>
+            <p>팩 설명, 포함 소재, 샘플 페이지를 보고 만들기로 이어집니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/pack-detail.png" alt="팩 상세 화면"></div>
+        </article>
+
+        <article class="atlas-card" data-reveal>
+          <div class="atlas-copy">
+            <span>CREATE</span>
+            <h3>시작 방식을 고릅니다.</h3>
+            <p>빈 페이지, 사진, 저장한 템플릿, 이전 작업에서 시작합니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/create.png" alt="Create 화면"></div>
+        </article>
+
+        <article class="atlas-card atlas-card-blue" data-reveal>
+          <div class="atlas-copy">
+            <span>COMPOSE</span>
+            <h3>한 장의 페이지를 편집합니다.</h3>
+            <p>레이어를 선택하고 이동·복제·정렬하며 작업합니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/compose.png" alt="Compose 편집 화면"></div>
+        </article>
+
+        <article class="atlas-card atlas-card-wide" data-reveal>
+          <div class="atlas-copy">
+            <span>PAGES</span>
+            <h3>저장한 페이지를 다시 찾습니다.</h3>
+            <p>날짜와 검색으로 페이지를 찾고, 다시 열어 편집하거나 여러 장을 선택해 공유합니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/pages.png" alt="Pages 화면"></div>
+        </article>
+
+        <article class="atlas-card" data-reveal>
+          <div class="atlas-copy">
+            <span>CALENDAR</span>
+            <h3>월 단위로 날짜를 이동합니다.</h3>
+            <p>Pages의 날짜 스트립에서 월간 달력을 열어 원하는 시점으로 이동합니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/calendar.png" alt="월간 달력 화면"></div>
+        </article>
+
+        <article class="atlas-card" data-reveal>
+          <div class="atlas-copy">
+            <span>LIBRARY</span>
+            <h3>저장한 재료를 모아 봅니다.</h3>
+            <p>사용자 템플릿, 북마크, 내 팩을 한곳에서 확인합니다.</p>
+          </div>
+          <div class="atlas-phone"><img src="./assets/img/screens/library.png" alt="Library 화면"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pack-section" id="packs">
+      <div class="pack-head" data-reveal>
+        <div>
+          <p class="kicker">CURRENT PACKS</p>
+          <h2>실제 아델리드로우 자산을 씁니다.</h2>
+        </div>
+        <p>현재 빌드에는 Home Sweet Home, Spring Fox Renewal, Lemon Pound Cake와 기본 흰 모조지가 들어 있습니다. 출시 팩 목록은 아직 확정 전입니다.</p>
+      </div>
+
+      <div class="pack-rail" aria-label="현재 팩 예시">
+        <figure class="pack-tile" data-reveal>
+          <img src="./assets/img/packs/home-sweet-home.webp" alt="홈스윗홈 팩 커버">
+          <figcaption><span>01</span><strong>Home Sweet Home</strong><small>39 stickers · current build</small></figcaption>
+        </figure>
+        <figure class="pack-tile pack-tile-tall" data-reveal>
+          <img src="./assets/img/packs/spring-fox.webp" alt="봄여우 리뉴얼 팩 커버">
+          <figcaption><span>02</span><strong>Spring Fox Renewal</strong><small>35 stickers · current build</small></figcaption>
+        </figure>
+        <figure class="pack-tile" data-reveal>
+          <img src="./assets/img/packs/lemon-pound-cake.webp" alt="레몬 파운드 케이크 팩 커버">
+          <figcaption><span>03</span><strong>Lemon Pound Cake</strong><small>25 stickers · current build</small></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="editor-stage" id="editor">
+      <div class="editor-copy" data-reveal>
+        <p class="kicker">COMPOSE</p>
+        <h2>편집할 때는 페이지가 중심에 있습니다.</h2>
+        <p>사진, 종이, 스티커, 텍스트를 한 캔버스에 놓습니다. 선택한 요소의 도구만 표시하고, 작업은 자동 저장합니다.</p>
+        <dl class="feature-list">
+          <div><dt>4</dt><dd>기본 재료<br><span>사진 · 종이 · 스티커 · 텍스트</span></dd></div>
+          <div><dt>AUTO</dt><dd>저장 방식<br><span>기기 내 자동 저장</span></dd></div>
+          <div><dt>PNG</dt><dd>내보내기<br><span>미리보기 후 저장 · 공유</span></dd></div>
+        </dl>
+      </div>
+      <div class="editor-phone" data-reveal>
+        <div class="editor-halo" aria-hidden="true"></div>
+        <div class="device-shell large"><img src="./assets/img/screens/compose.png" alt="Adelie Pages 편집 화면"></div>
+      </div>
+    </section>
+
+    <section class="status-section" id="status">
+      <div class="section-head" data-reveal>
+        <p class="kicker">CURRENT BUILD / SEP 2026</p>
+        <h2>현재 빌드 기준.</h2>
+        <p>출시 전 상태이므로 구현된 기능과 아직 준비되지 않은 항목을 나눠 적었습니다.</p>
+      </div>
+
+      <div class="status-grid">
+        <article data-reveal>
+          <span class="status-mark status-ready">IMPLEMENTED</span>
+          <h3>지금 동작하는 기능</h3>
+          <ul>
+            <li>Home / Pages / Create / Studio / Library</li>
+            <li>기기 내 자동 저장과 재편집</li>
+            <li>날짜 탐색 · 검색 · 여러 장 선택</li>
+            <li>PNG 저장과 시스템 공유</li>
+            <li>한국어 · English · 日本語 · 中文</li>
+            <li>휴대폰 · 태블릿 레이아웃</li>
+          </ul>
+        </article>
+        <article data-reveal>
+          <span class="status-mark status-next">NOT RELEASED</span>
+          <h3>아직 준비 중인 항목</h3>
+          <ul>
+            <li>App Store · Google Play 공개 배포</li>
+            <li>개인정보처리방침 · 이용약관 · 지원 URL</li>
+            <li>최종 출시 팩 구성과 유료 상품 매핑</li>
+            <li>실제 구매 · 복원 흐름의 출시 검증</li>
+            <li>클라우드 백업 · 복원</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="finale-icon" data-reveal><img src="./assets/img/brand/app-icon.png" alt=""></div>
+      <p class="kicker" data-reveal>ADELIE DRAW / DIGITAL STATIONERY</p>
+      <h2 data-reveal>Adelie<br>Pages</h2>
+      <p class="finale-copy" data-reveal>스티커팩을 고르고, 한 장을 만들고, 저장해 다시 엽니다.</p>
+      <div class="finale-meta" data-reveal>
+        <span>iOS · Android</span>
+        <span>출시 준비 중</span>
+        <span>© 2026 Adelie Draw</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
