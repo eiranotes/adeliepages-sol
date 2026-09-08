@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>스티커팩 — Adelie Pages</title>
+  <meta name="theme-color" content="#f8f8f8">
+  <link rel="icon" type="image/png" href="./assets/img/brand/app-icon.png">
+  <link rel="preload" href="./assets/fonts/LINESeedKR-Rg.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="pack-page">
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html" aria-label="Adelie Pages 홈으로">
+        <img src="./assets/img/brand/app-icon.png" width="42" height="42" alt="">
+        <span>Adelie Pages<small>by Adelie Draw</small></span>
+      </a>
+      <nav aria-label="주요 메뉴"><a href="./index.html#packs">스티커팩</a><a href="./index.html#make">한 장 만들기</a><a href="./index.html#screens">앱 화면</a></nav>
+      <a class="release pack-back" href="./index.html#packs">← 팩 목록</a>
+    </div>
+  </header>
+
+  <main id="main" class="pack-detail wrap">
+    <aside class="pack-detail-meta">
+      <p class="eyebrow">STICKER PACK</p>
+      <h1 id="pack-name">스티커팩</h1>
+      <p class="pack-english" id="pack-english"></p>
+      <p class="pack-description" id="pack-description">팩 정보를 불러오는 중입니다.</p>
+      <div class="pack-tags" id="pack-tags"></div>
+      <p class="pack-count" id="pack-count"></p>
+      <label class="sticker-search"><span>스티커 이름 찾기</span><input id="sticker-search" type="search" placeholder="펭귄, 꽃, 레몬…" autocomplete="off"></label>
+      <p class="search-status" id="search-status" role="status"></p>
+    </aside>
+
+    <section class="sticker-catalog" aria-labelledby="catalog-title">
+      <div class="catalog-heading"><h2 id="catalog-title">팩에 들어 있는 그림</h2><p>그림을 누르면 크게 볼 수 있습니다.</p></div>
+      <div class="sticker-grid" id="sticker-grid"></div>
+      <div class="catalog-empty" id="catalog-empty" hidden><p>일치하는 스티커가 없습니다.</p><button type="button" id="clear-search">검색 지우기</button></div>
+    </section>
+  </main>
+
+  <dialog class="sticker-dialog" id="sticker-dialog">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" aria-label="닫기">×</button>
+      <div class="dialog-art"><img id="dialog-image" alt=""></div>
+      <div class="dialog-meta"><span id="dialog-index"></span><strong id="dialog-name"></strong><div><button type="button" id="dialog-prev">← 이전</button><button type="button" id="dialog-next">다음 →</button></div></div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><div><strong>Adelie Pages</strong><p>아델리드로우의 디지털 문구 앱</p></div><p>스티커를 고르고, 오늘 한 장.</p><small>© 2026 Adelie Draw</small></div></footer>
+  <script src="./pack.js" defer></script>
+</body>
+</html>
