@@ -445,7 +445,7 @@ def render_page(page_key):
             )
         panels.append(f"""
   <div data-locale="{lang}"{' hidden' if lang != 'ko' else ''}>
-    {header(page_key, lang)}
+{header(page_key, lang)}
     <main id="main-{lang}">
       <section class="legal-hero wrap">
         <aside class="legal-folio">
@@ -478,7 +478,7 @@ def render_page(page_key):
         </article>
       </div>
     </main>
-    {footer(lang)}
+{footer(lang)}
   </div>""")
     return f"""<!doctype html>
 <html lang="ko">
